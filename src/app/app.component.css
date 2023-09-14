@@ -1,0 +1,32 @@
+.list-group-item{
+  cursor: pointer;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: aqua;
+  transition: opacity .5s ease;
+}
+
+.list-group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1px;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+
+.list-group-item:not(active){
+  opacity: 0.5;
+  background-color: gray;
+}
+.list-group-item:active{
+  opacity: 1;
+}
+
+
